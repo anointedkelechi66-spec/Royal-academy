@@ -144,3 +144,321 @@ footer {
 
     padding: 20px;
 }
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background-color: #14213d;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fca311;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(20, 33, 61, 0.85),
+        rgba(20, 33, 61, 0.85)
+    );
+
+    color: white;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn,
+.contact button {
+    display: inline-block;
+    padding: 13px 28px;
+
+    background-color: #fca311;
+    color: #14213d;
+
+    border: none;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover,
+.contact button:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.about,
+.programs,
+.why-us,
+.admissions,
+.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about h2,
+.programs h2,
+.why-us h2,
+.admissions h2,
+.contact h2 {
+    color: #14213d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* =========================
+   PROGRAMS
+========================= */
+
+.program-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.program {
+    width: 30%;
+    padding: 35px 25px;
+
+    background-color: #f8f9fa;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.program:hover {
+    transform: translateY(-8px);
+}
+
+.program h3 {
+    color: #14213d;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-us {
+    background-color: #f8f9fa;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.why-card {
+    width: 30%;
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+.why-card h3 {
+    color: #14213d;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   ADMISSIONS
+========================= */
+
+.admissions {
+    background-color: #14213d;
+    color: white;
+}
+
+.admissions h2 {
+    color: white;
+}
+
+.admissions p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background-color: white;
+}
+
+.contact p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+.contact button {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0b132b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .program-container,
+    .why-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program,
+    .why-card {
+        width: 90%;
+    }
+}
